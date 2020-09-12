@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet" media="all">
+    <meta charset="utf-8">
+    <script src="/static/js/url.js"></script>
+    <title>Ссылкоукоротитель</title>
+</head>
+<body>
+<div class="container-fluid"><img id="image" src="/static/img/header.jpeg" width="340px" height="120px"></div>
+<div class="container">
+    <!--<div id="z" class="header-img"></div>
+    <div class="header-img"></div>-->
+    <h1>Ссылкоукоротитель</h1>
+    <p>Sign up</p>
+
+    <div id="main">
+        <form method="POST" action="/sign-up" id="send-form">
+
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input placeholder="Введите Email" type="Email" name="username" class="form-control"
+                           id="staticEmail">
+                </div>
+            </div>
+            <progress max="100" value="0" id="meter"></progress>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" name="password" placeholder="Введите Password" class="form-control"
+                           id="inputPassword">
+                    <div class="textbox"></div>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Sing up"/>
+            </div>
+        </form>
+        {% if error %}
+<p class="alert alert-danger">Oшибка!{{ error }}<p>
+        {% endif %}
+    </div>
+</div>
+<footer>copyrigth &copy; 2020</footer>
+</body>
+</html>

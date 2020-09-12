@@ -1,0 +1,38 @@
+
+body
+{
+	background: white;
+	margin: 2;
+}
+#main {
+	height: 200px;
+	background: white;
+	min-width: 650px;
+}
+
+#url {
+	width: 80%;
+}
+.header-img {
+	background-image: url("../../header.jpeg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 400px;
+	width: 60%;
+	position: absolute;
+}
+#image {
+	display: block;
+	width: 40%;
+}
+#z {
+	height: 300px;
+}
+footer {
+	bottom: 10px;
+	position: absolute;
+
+}
+h1 {
+	font-family: 'Balsamiq Sans', cursive;
+}
