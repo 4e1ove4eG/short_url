@@ -36,3 +36,7 @@ footer {
 h1 {
 	font-family: 'Balsamiq Sans', cursive;
 }
+#sign-in {
+	margin-right: 30px;
+	display: block;
+}
