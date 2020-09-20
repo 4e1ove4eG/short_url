@@ -1,0 +1,7 @@
+def CountZero(x):
+    s = bin(x)
+    s = str(s)
+    print(s)
+#40^n - 8^n - 2^n = 10000000
+#64^n - 8^n - 2^n = 128
+CountZero(128)

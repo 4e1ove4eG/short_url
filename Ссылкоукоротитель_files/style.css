@@ -1,0 +1,14 @@
+body
+{
+	background: white;
+	margin: 2;
+}
+#main {
+	height: 200px;
+	background: white;
+	min-width: 650px;
+}
+
+#url {
+	width: 80%;
+}
